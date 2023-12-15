@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "2c47d6de5d2252cff2b947b066a1eacc",
     "packages": [
         {
             "name": "brick/math",
@@ -2465,6 +2465,54 @@
                 }
             ],
             "time": "2023-11-12T21:59:55+00:00"
+        },
+        {
+            "name": "pixiibomb/essentials",
+            "version": "1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PixiiBomb/essentials.git",
+                "reference": "66c1bb3dd79099829015a7c4f4d01a285e233a8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PixiiBomb/essentials/zipball/66c1bb3dd79099829015a7c4f4d01a285e233a8a",
+                "reference": "66c1bb3dd79099829015a7c4f4d01a285e233a8a",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PixiiBomb\\Essentials\\PixiiBombEssentialsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers/common.php",
+                    "src/Helpers/keywords.php"
+                ],
+                "psr-4": {
+                    "PixiiBomb\\Essentials\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PixiiBomb",
+                    "email": "pixii@pixiibomb.com"
+                }
+            ],
+            "description": "A standard package for all PixiiBomb projects.",
+            "support": {
+                "issues": "https://github.com/PixiiBomb/essentials/issues",
+                "source": "https://github.com/PixiiBomb/essentials/tree/v1.0.13"
+            },
+            "time": "2023-09-25T16:26:39+00:00"
         },
         {
             "name": "psr/clock",

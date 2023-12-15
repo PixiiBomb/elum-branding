@@ -1,0 +1,214 @@
+@import 'ruleset';
+
+#Container-Info {
+    background-color: $color-secondary-bg;
+}
+
+.color-block {
+    height: 20vh;
+    gap: $padding;
+    color: $color-primary-text;
+    padding: $padding;
+}
+
+.color-primary-bg,
+.color-secondary-bg,
+.color-tertiary-bg {
+    border: 1px solid $color-border-primary;
+}
+
+.variants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.color-variant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    cursor: pointer;
+    flex: 1;
+    transition: all .3s ease-in-out;
+}
+
+.color-variant .info {
+    font-size: $font-size-sm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0s linear;
+    height: inherit;
+}
+
+.color-variant .info span {
+    font-size: $font-size-xs;
+    line-height: $font-size-sm * .5;
+}
+
+.color-variant:hover {
+    flex-grow: 9;
+}
+
+.color-variant:hover .info {
+    opacity: 1;
+    transition: opacity .3s ease-in-out .2s;
+}
+
+
+.variants:hover .color-variant:not(:hover) {
+    flex-grow: 1;
+}
+
+.color-primary {
+    background-color: $color-primary;
+}
+
+.color-primary-active {
+    background-color: $color-primary-active;
+}
+
+.color-primary-hover {
+    background-color: $color-primary-hover;
+}
+
+.color-primary-inactive {
+    background-color: $color-primary-inactive;
+}
+
+.color-primary-alpha {
+    background-color: $color-primary-alpha;
+}
+
+.color-secondary {
+    background-color: $color-secondary;
+}
+
+.color-secondary-active {
+    background-color: $color-secondary-active;
+}
+
+.color-secondary-hover {
+    background-color: $color-secondary-hover;
+}
+
+.color-secondary-inactive {
+    background-color: $color-secondary-inactive;
+}
+
+.color-secondary-alpha {
+    background-color: $color-secondary-alpha;
+}
+
+.color-accent {
+    background-color: $color-accent;
+}
+
+.color-accent-active {
+    background-color: $color-accent-active;
+}
+
+.color-accent-hover {
+    background-color: $color-accent-hover;
+}
+
+.color-accent-inactive {
+    background-color: $color-accent-inactive;
+}
+
+.color-accent-alpha {
+    background-color: $color-accent-alpha;
+}
+
+.color-success {
+    background-color: $color-success;
+}
+
+.color-success-active {
+    background-color: $color-success-active;
+}
+
+.color-success-hover {
+    background-color: $color-success-hover;
+}
+
+.color-success-inactive {
+    background-color: $color-success-inactive;
+}
+
+.color-success-alpha {
+    background-color: $color-success-alpha;
+}
+
+.color-warning {
+    background-color: $color-warning;
+}
+
+.color-warning-active {
+    background-color: $color-warning-active;
+}
+
+.color-warning-hover {
+    background-color: $color-warning-hover;
+}
+
+.color-warning-inactive {
+    background-color: $color-warning-inactive;
+}
+
+.color-warning-alpha {
+    background-color: $color-warning-alpha;
+}
+
+.color-caution {
+    background-color: $color-caution;
+}
+
+.color-caution-active {
+    background-color: $color-caution-active;
+}
+
+.color-caution-hover {
+    background-color: $color-caution-hover;
+}
+
+.color-caution-inactive {
+    background-color: $color-caution-inactive;
+}
+
+.color-caution-alpha {
+    background-color: $color-caution-alpha;
+}
+
+.color-note {
+    background-color: $color-note;
+}
+
+.color-note-active {
+    background-color: $color-note-active;
+}
+
+.color-note-hover {
+    background-color: $color-note-hover;
+}
+
+.color-note-inactive {
+    background-color: $color-note-inactive;
+}
+
+.color-note-alpha {
+    background-color: $color-note-alpha;
+}
+
+.more-information {
+    margin-top: $padding-lg;
+}
+
+
+
+

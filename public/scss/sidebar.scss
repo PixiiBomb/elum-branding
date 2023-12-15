@@ -1,0 +1,59 @@
+@import 'ruleset';
+
+#Sidebar {
+    position: relative;
+    min-width: 15%;
+    color: $color-primary-text;
+    font-size: $font-size;
+    box-shadow: 5px 0 2px 0 $color-navigation-bg;
+    padding: $padding;
+    background-color: $color-navigation-bg;
+}
+
+@media screen and (max-width: 768px) {
+    #Sidebar {
+        position: absolute;
+        box-shadow: 5px 0 5px 0 $color-shadow;
+        height: 100%;
+    }
+}
+
+#Sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $padding-lg;
+}
+
+#Sidebar .logo a {
+    width: 30%;
+}
+
+#Sidebar a li {
+    padding: $padding-xs;
+    border-bottom: 1px solid $color-border-primary;
+    cursor: pointer;
+    text-decoration: none;
+    text-underline: none;
+    color: $color-primary-text;
+    font-weight: 400;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+#Sidebar a:active li {
+    color: $color-primary;
+}
+
+#Sidebar li:hover {
+    color: $color-primary-text-hover;
+}
+
+#Sidebar ul ul {
+    background-color: $color-secondary-bg;
+    padding: $padding-sm $padding;
+}
+
+#Sidebar ul ul li {
+    border: 0;
+}

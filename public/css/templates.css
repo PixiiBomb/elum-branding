@@ -1,0 +1,26 @@
+.template-header-center,
+.template-header-center h1 {
+    text-align: center;
+}
+
+.template-chips {
+
+}
+
+footer {
+    align-items: center;
+}
+
+footer #Brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer #Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}

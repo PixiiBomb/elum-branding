@@ -1,0 +1,73 @@
+@import 'ruleset';
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.col-6,
+.justify-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col-6.left {
+    padding-right: $padding-lg;
+}
+
+.col-6.right {
+    border-left: 1px solid $color-border-primary;
+    padding-left: $padding-lg;
+}
+
+.column-2-sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: $color-primary-bg;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.content > .container-fluid {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-xl;
+    margin: 0;
+}
+
+.content .container-fluid:nth-child(even) {
+    background-color: $color-secondary-bg;
+}
+
+#Container-Jumbotron {
+    padding: 0;
+}
+
+#Container-Thumbnail {
+    background: url('../images/backgrounds/background_crystals_small_bottom_right.png') right center no-repeat;
+}
+
+#Container-Feature {
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
+}
+
+.more-information {
+    margin-top: $padding-lg;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: $padding-sm;
+    color: $color-secondary-text;
+}
+
+

@@ -1,0 +1,8 @@
+BODY {
+    height: 100%;
+}
+
+.row, .container-fluid {
+    padding: 0;
+    margin: 0;
+}

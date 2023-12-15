@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'Suss-Icons';
+    src: url('../fonts/SussIcons-Regular-1.0.0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Code';
+    src: url('../fonts/SFMono-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$base-font-body: 'Poppins-Regular', sans-serif;
+$base-font-header: 'Poppins-Bold', sans-serif;
+$base-font-code: 'Code', serif;
+$base-font-icons: 'Suss-Icons', sans-serif;
+
+$color-shadow: rgba(32, 32, 32, .5);
+$color-header: #FFFFFF;
+
+$color-primary-bg: rgba(40, 42, 54, 1.0);
+$color-primary-bg-active: rgba(31, 33, 43, 1.0);
+$color-primary-bg-hover: rgba(83, 84, 94, 1.0);
+$color-primary-bg-inactive: rgba(116, 117, 121, 1.0);
+$color-primary-bg-alpha: rgba(40, 42, 54, 0.5);
+$color-primary-bg-transparent: rgba(40, 42, 54, 0.0);
+
+$color-secondary-bg: #343646;
+$color-secondary-bg-active: rgba(41, 43, 55, 1.0);
+$color-secondary-bg-hover: rgba(92, 94, 107, 1.0);
+$color-secondary-bg-inactive: rgba(120, 121, 125, 1.0);
+$color-secondary-bg-alpha: rgba(52, 54, 70, 0.5);
+$color-secondary-bg-transparent: rgba(52, 54, 70, 0.0);
+
+$color-tertiary-bg: rgba(63, 65, 82, 1.0);
+$color-tertiary-bg-active: rgba(50, 51, 65, 1.0);
+$color-tertiary-bg-hover: rgba(101, 103, 116, 1.0);
+$color-tertiary-bg-inactive: rgba(123, 124, 129, 1.0);
+$color-tertiary-bg-alpha: rgba(63, 65, 82, 0.5);
+$color-tertiary-bg-transparent: rgba(63, 65, 82, 0.0);
+
+$color-navigation-bg: #242631;
+
+$color-primary-text: #D8D8D8;
+$color-primary-text-active: rgba(172, 172, 172, 1.0);
+$color-primary-text-hover: rgba(223, 223, 223, 1.0);
+$color-primary-text-inactive: rgba(169, 169, 169, 1.0);
+$color-primary-text-alpha: rgba(216, 216, 216, 0.5);
+$color-primary-text-transparent: rgba(216, 216, 216, 0.0);
+
+$color-secondary-text: rgba(255, 255, 255, 1.0);
+$color-secondary-text-active: rgba(203, 203, 203, 1.0);
+$color-secondary-text-hover: rgba(255, 255, 255, 1.0);
+$color-secondary-text-inactive: rgba(181, 181, 181, 1.0);
+$color-secondary-text-alpha: rgba(255, 255, 255, 0.5);
+$color-secondary-text-transparent: rgba(255, 255, 255, 0.0);
+
+$color-tertiary-text: $color-primary-bg; /*#aaabb2;*/
+$color-tertiary-text-active: rgba(31, 33, 43, 1.0);
+$color-tertiary-text-hover: rgba(83, 84, 94, 1.0);
+$color-tertiary-text-inactive: rgba(116, 117, 121, 1.0);
+$color-tertiary-text-alpha: rgba(40, 42, 54, 0.5);
+$color-tertiary-text-transparent: rgba(40, 42, 54, 0.0);
+
+$color-primary: #1594ce;
+$color-primary-active: rgba(39, 156, 194, 1.0);
+$color-primary-hover: rgba(90, 207, 245, 1.0);
+$color-primary-inactive: rgba(119, 163, 177, 1.0);
+$color-primary-alpha: rgba(49, 196, 243, 0.5);
+$color-primary-transparent: rgba(49, 196, 243, 0.0);
+
+$color-secondary: rgba(129, 196, 97, 1.0);
+$color-secondary-active: rgba(103, 156, 77, 1.0);
+$color-secondary-hover: rgba(154, 207, 128, 1.0);
+$color-secondary-inactive: rgba(143, 163, 134, 1.0);
+$color-secondary-alpha: rgba(129, 196, 97, 0.5);
+$color-secondary-transparent: rgba(129, 196, 97, 0.0);
+
+$color-accent: rgba(49, 196, 243, 1.0);
+$color-accent-active: rgba(39, 156, 194, 1.0);
+$color-accent-hover: rgba(90, 207, 245, 1.0);
+$color-accent-inactive: rgba(119, 163, 177, 1.0);
+$color-accent-alpha: rgba(49, 196, 243, 0.5);
+$color-accent-transparent: rgba(49, 196, 243, 0.0);
+
+$color-alternate: rgba(49, 196, 243, 1.0);
+
+$color-success: rgba(39, 174, 96, 1.0);
+$color-success-active: rgba(31, 139, 76, 1.0);
+$color-success-hover: rgba(82, 190, 127, 1.0);
+$color-success-inactive: rgba(116, 157, 133, 1.0);
+$color-success-alpha: rgba(39, 174, 96, 0.5);
+$color-success-transparent: rgba(39, 174, 96, 0.0);
+
+$color-warning: rgba(231, 76, 60, 1.0);
+$color-warning-active: rgba(184, 60, 47, 1.0);
+$color-warning-hover: rgba(235, 111, 99, 1.0);
+$color-warning-inactive: rgba(174, 127, 122, 1.0);
+$color-warning-alpha: rgba(231, 76, 60, 0.5);
+$color-warning-transparent: rgba(231, 76, 60, 0.0);
+
+$color-caution: rgba(255, 168, 1, 1.0);
+$color-caution-active: rgba(203, 134, 0, 1.0);
+$color-caution-hover: rgba(255, 185, 51, 1.0);
+$color-caution-inactive: rgba(181, 155, 105, 1.0);
+$color-caution-alpha: rgba(255, 168, 1, 0.5);
+$color-caution-transparent: rgba(255, 168, 1, 0.0);
+
+$color-note: rgba(0, 147, 205, 1.0);
+$color-note-active: rgba(0, 117, 163, 1.0);
+$color-note-hover: rgba(51, 168, 215, 1.0);
+$color-note-inactive: rgba(104, 149, 166, 1.0);
+$color-note-alpha: rgba(0, 147, 205, 0.5);
+$color-note-transparent: rgba(0, 147, 205, 0.0);
+
+$color-white: rgba(255, 255, 255, 1.0);
+$color-white-active: rgba(203, 203, 203, 1.0);
+$color-white-hover: rgba(255, 255, 255, 1.0);
+$color-white-inactive: rgba(181, 181, 181, 1.0);
+$color-white-alpha: rgba(255, 255, 255, 0.5);
+$color-white-transparent: rgba(255, 255, 255, 0.0);
+
+$color-light: rgba(243, 245, 247, 1.0);
+$color-light-active: rgba(194, 195, 197, 1.0);
+$color-light-hover: rgba(245, 247, 248, 1.0);
+$color-light-inactive: rgba(177, 178, 179, 1.0);
+$color-light-alpha: rgba(243, 245, 247, 0.5);
+$color-light-transparent: rgba(243, 245, 247, 0.0);
+
+$color-dark: rgba(35, 35, 35, 1.0);
+$color-dark-active: rgba(27, 27, 27, 1.0);
+$color-dark-hover: rgba(79, 79, 79, 1.0);
+$color-dark-inactive: rgba(115, 115, 115, 1.0);
+$color-dark-alpha: rgba(35, 35, 35, 0.5);
+$color-dark-transparent: rgba(35, 35, 35, 0.0);
+
+$color-black: rgba(0, 0, 0, 1.0);
+$color-black-active: rgba(0, 0, 0, 1.0);
+$color-black-hover: rgba(51, 51, 51, 1.0);
+$color-black-inactive: rgba(104, 104, 104, 1.0);
+$color-black-alpha: rgba(0, 0, 0, 0.5);
+$color-black-transparent: rgba(0, 0, 0, 0.0);
+
+$color-border-primary: rgba(255, 255, 255, .1);
+$color-border-secondary: rgba(255, 255, 255, 0.2);
+$color-border-tertiary: rgba(35, 35, 35, 0.2);
+
+
+$color-border-primary-active: rgba(203, 203, 203, 0.7);
+$color-border-primary-hover: rgba(255, 255, 255, 0.7);
+$color-border-primary-inactive: rgba(181, 181, 181, 0.9);
+$color-border-primary-alpha: rgba(255, 255, 255, 0.5);
+$color-border-primary-transparent: rgba(255, 255, 255, 0.0);
+$color-border-secondary-active: rgba(203, 203, 203, 0.4);
+$color-border-secondary-hover: rgba(255, 255, 255, 0.4);
+$color-border-secondary-inactive: rgba(181, 181, 181, 0.8);
+$color-border-secondary-alpha: rgba(255, 255, 255, 0.5);
+$color-border-secondary-transparent: rgba(255, 255, 255, 0.0);
+$color-border-tertiary-active: rgba(27, 27, 27, 0.4);
+$color-border-tertiary-hover: rgba(79, 79, 79, 0.4);
+$color-border-tertiary-inactive: rgba(115, 115, 115, 0.8);
+$color-border-tertiary-alpha: rgba(35, 35, 35, 0.5);
+$color-border-tertiary-transparent: rgba(35, 35, 35, 0.0);
+
+$padding-xs: 8px;
+$padding-sm: 16px;
+$padding-md: 32px;
+$padding-lg: 64px;
+$padding-xl: 128px;
+$border-width-sm: 1px;
+$border-radius-sm: 6px;
+$border-width-md: 2px;
+$border-radius-md: 8px;
+$border-width-lg: 4px;
+$border-radius-lg: 12px;
+
+/* Typography */
+$base-font-size: 16px;
+$base-font-line-height: 1.8;
+$base-header-line-height: 1.3;
+
+$header-1: 3rem;
+$header-2: 2.5rem;
+$header-3: 2rem;
+$header-4: 1.5rem;
+$header-5: 1.25rem;
+$header-6: 1rem;
+
+$font-size-xs: .75rem;
+$font-size-sm: .875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+
+$icon-xs: 8px;
+$icon-sm: 16px;
+$icon-md: 32px;
+$icon-lg: 64px;
+$icon-xl: 124px;
+$icon-xxl: 256px;
+$suss-icon-font: $base-font-icons;
+$font-body: $base-font-body;
+$font-header: $base-font-header;
+$font-lead: $base-font-body;
+$font-code: $base-font-code;
+$color-document-bg: #2E2E2E;
+$color-layer-bg: rgba(32, 32, 32, 1);
+$color-layer-bg-alpha: rgba(32, 32, 32, .95);
+$color-bg-transparent: rgba(255, 255, 255, 0);
+$color-bg-transparent-hover: rgba(255, 255, 255, .2);
+$color-bg-transparent-active: rgba(255, 255, 255, .1);
+$min-width: 320px;
+$min-height: 250px;
+$time-slow: 1s;
+$time-medium: .3s;
+$time-fast: .1s;
+$transition-all: all var($time-medium) ease-in-out;
+$transition-all-fast: all var($time-fast) ease-in-out;
+$transition-all-instant: all 0s linear;
+$icon: $icon-md;
+$border-radius: $border-radius-md;
+$padding: $padding-md;
+$transition: $transition-all;
+$font-size: $font-size-md;
+
+
+$gradient-primary: linear-gradient(to right, $color-primary, $color-secondary);
+$gradient-primary: linear-gradient(to right, $color-alternate, $color-primary);
+
+
+HTML, BODY {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $font-body;
+    font-weight: normal;
+    font-size: $base-font-size;
+    line-height: $base-font-size * $base-font-line-height;
+    letter-spacing: 1.3px;
+    color: $color-primary-text;
+}
+
+small {
+    font-size: $font-size-sm;
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $color-primary-hover;
+}
+
+code {
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    padding: 4px;
+    border-radius: $border-radius-sm;
+    background-color: $color-navigation-bg;
+    box-shadow: 0 0 5px 0 $color-navigation-bg;
+}
+
+p {
+    line-height: $base-font-size * $base-font-line-height;
+}
+
+h1, h2, h3, h4, h5, h6, {
+    font-family: $font-header;
+    color: $color-header;
+}
+
+h1.tertiary {
+    color: $color-tertiary-text;
+}
+
+p {
+    line-height: $base-font-size * $base-font-line-height;
+    margin-bottom: $padding;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Implementation of Ruleset */
+.color-primary-bg {
+    background-color: $color-primary-bg;
+}
+
+.color-primary-bg-hover {
+    background-color: $color-primary-bg-hover;
+}
+
+.color-primary-bg-active {
+    background-color: $color-primary-bg-active;
+}
+
+.color-primary-bg-inactive {
+    background-color: $color-primary-bg-inactive;
+}
+
+.color-primary-bg-alpha {
+    background-color: $color-primary-bg-alpha;
+}
+
+.color-primary-bg-transparent {
+    background-color: $color-primary-bg-transparent;
+}
+.color-secondary-bg {
+    background-color: $color-secondary-bg;
+}
+
+.color-secondary-bg-hover {
+    background-color: $color-secondary-bg-hover;
+}
+
+.color-secondary-bg-active {
+    background-color: $color-secondary-bg-active;
+}
+
+.color-secondary-bg-inactive {
+    background-color: $color-secondary-bg-inactive;
+}
+
+.color-secondary-bg-alpha {
+    background-color: $color-secondary-bg-alpha;
+}
+
+.color-secondary-bg-transparent {
+    background-color: $color-secondary-bg-transparent;
+}
+
+.color-tertiary-bg {
+    background-color: $color-tertiary-bg;
+}
+
+.color-tertiary-bg-hover {
+    background-color: $color-tertiary-bg-hover;
+}
+
+.color-tertiary-bg-active {
+    background-color: $color-tertiary-bg-active;
+}
+
+.color-tertiary-bg-inactive {
+    background-color: $color-tertiary-bg-inactive;
+}
+
+.color-tertiary-bg-alpha {
+    background-color: $color-tertiary-bg-alpha;
+}
+
+.color-tertiary-bg-transparent {
+    background-color: $color-tertiary-bg-transparent;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    color: $color-primary-text;
+}
+
+h1 {
+    font-size: $header-1;
+    line-height: $header-1 * $base-header-line-height;
+}
+
+h2 {
+    font-size: $header-2;
+    line-height: $header-2 * $base-header-line-height;
+}
+
+h3 {
+    font-size: $header-3;
+    line-height: $header-3 * $base-header-line-height;
+}
+
+h4 {
+    font-size: $header-4;
+    line-height: $header-4 * $base-header-line-height;
+}
+
+h5 {
+    font-size: $header-5;
+    line-height: $header-5 * $base-header-line-height;
+}
+
+h6 {
+    font-size: $header-6;
+    line-height: $header-6 * $base-header-line-height;
+}
+
+.font-size-xs {
+    font-size: $font-size-xs;
+}
+
+.font-size-sm {
+    font-size: $font-size-sm;
+}
+
+.font-size-md {
+    font-size: $font-size-md;
+}
+
+.font-size-lg {
+    font-size: $font-size-lg;
+}
+
+.font-size-xl {
+    font-size: $font-size-xl;
+}
+
+.lead {
+    font-weight: 300;
+    font-size: $font-size-xl;
+    line-height: $font-size-xl * $base-font-line-height;
+}
+
+.display-1 {
+    font-family: $font-header;
+    font-size: 80px;
+}
+
+.font-light {
+    font-family: $font-body;
+    font-weight: 300;
+}
+
+.font-regular {
+    font-family: $font-body;
+}
+
+.font-bold {
+    font-family: $font-header;
+}
+
+.font-code {
+    font-family: $font-code;
+}
+
+.suss-icons {
+    font-family: $suss-icon-font;
+}
+
+.icon-home::before {
+    content: "\ue054";
+}
+
+
+
